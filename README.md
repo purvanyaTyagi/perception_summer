@@ -20,8 +20,8 @@ This project implements a LiDAR-only perception pipeline to detect traffic cones
 ---
 ## 📦 Dependencies
 - **ROS2-Humble**: and added dependencies
-- **PyTorch**
-- **NVIDIA-CUDA**: For GPU acceleration and faster results
+- **PyTorch** : LibTorch for c++
+- **NVIDIA-CUDA**: For GPU acceleration and faster results, VERSION(12.6)
 Project Report: https://docs.google.com/document/d/1kQ-blUyZ2a6Zgz1Gi7SrNZTntNLJ8KSFtZw2osUuel8/edit?usp=sharing
 
 
