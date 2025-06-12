@@ -10,7 +10,6 @@ This project implements a LiDAR-only perception pipeline to detect traffic cones
 - 📊 **Clustering** (e.g., DBSCAN) to isolate objects
 - 🟠 **Centroid Extraction** from clustered points
 - 🧠 **Cone Classification** using a trained PyTorch ANN
-- 
 ---
 ## 🧪 Workflow Overview
 
@@ -19,5 +18,10 @@ This project implements a LiDAR-only perception pipeline to detect traffic cones
 3. **Feature Extraction**: Extract points from individual cones and scale the intensity values.
 4. **Classification**: Pass features through a PyTorch ANN to classify cone type.
 ---
+## 📦 Dependencies
+- **ROS2-Humble**: and added dependencies
+- **PyTorch**
+- **NVIDIA-CUDA**: For GPU acceleration and faster results
+Project Report: https://docs.google.com/document/d/1kQ-blUyZ2a6Zgz1Gi7SrNZTntNLJ8KSFtZw2osUuel8/edit?usp=sharing
 
 
