@@ -67,22 +67,21 @@ class main_node(Node):
         self.distance_from_ground = -0.1629
         self.sphere_radius = 0.7
         self.fixed_length = 32
+        self.prev_marker_count = 0
         self.model = SimpleNN(input_dim=32)  
         self.model.load_state_dict(torch.load(os.path.expanduser("~/Desktop/model_weights.pth")))
 
         files = [
-            'cone_intensities_1.csv',
-            'cone_intensities_2.csv',
-            'cone_intensities_3.csv'
+            'cone_intensities_1_new.csv',
+            'cone_intensities_2_new.csv',
+            'cone_intensities_3_new.csv'
         ]
         dfs = [pd.read_csv(f, header=None) for f in files]
         data = pd.concat(dfs, ignore_index=True)
         X = data.iloc[:, :-1].values.astype('float32')  # All but last column
         y = data.iloc[:, -1].values   # Last column (labels: 'left' or 'right')
         self.label_encoder = LabelEncoder()
-        self.scaler = StandardScaler()
         y = self.label_encoder.fit_transform(y)  # e.g. 'left' -> 0, 'right' -> 1
-        X = self.scaler.fit_transform(X)
         # self.model = load_model('/absolute/path/to/cone_classifier_model.h5')
         # self.scaler = joblib.load('/absolute/path/to/scaler.pkl')
         # self.label_encoder = joblib.load('/absolute/path/to/label_encoder.pkl')
@@ -96,67 +95,20 @@ class main_node(Node):
             return
         
         raw_intensities = intensity_channel.values
-        # min_intensity = min(raw_intensities)
-        # max_intensity = max(raw_intensities)
-        # range_intensity = max_intensity - min_intensity if max_intensity != min_intensity else 1.0
-        intensities_left_raw = []
-        intensities_right_raw = []
-        factor = 100.0
+        min_intensity = min(raw_intensities)
+        max_intensity = max(raw_intensities)
+        range_intensity = max_intensity - min_intensity if max_intensity != min_intensity else 1.0
 
-        # for i, point in enumerate(msg.points):
-        #     if((point.z > self.distance_from_ground)):
-        #         raw = raw_intensities[i]
-        #         scaled = (((raw - min_intensity) / range_intensity) ** 0.5) * factor
-        #         intensities.append(scaled)
-        #         points.append([point.x, point.y, point.z, scaled])
+        intensities = []
+        points = []
+        factor = 100
 
         for i, point in enumerate(msg.points):
-            if(point.z > self.distance_from_ground and point.y > 0):
-                intensities_left_raw.append(raw_intensities[i])
-            elif(point.z > self.distance_from_ground and point.y < 0):
-                intensities_right_raw.append(raw_intensities[i])
-        
-        min_intensity_left = min(intensities_left_raw)
-        max_intensity_left = max(intensities_left_raw) 
-        range_intensity_left = max_intensity_left - min_intensity_left if max_intensity_left != min_intensity_left else 1.0
-
-        min_intensity_right = min(intensities_right_raw)
-        max_intensity_right = max(intensities_right_raw) 
-        range_intensity_right = max_intensity_right - min_intensity_right if max_intensity_right != min_intensity_right else 1.0
-
-        intensities_left = []
-        intensities_right = []
-        points_left = []
-        points_right = []
-
-        for i, point in enumerate(msg.points):
-            if(point.z > self.distance_from_ground and point.y > 0):
+            if((point.z > self.distance_from_ground)):
                 raw = raw_intensities[i]
-                scaled = (((raw - min_intensity_left) / range_intensity_left) ** 0.5) * factor
-                intensities_left.append(scaled)
-                points_left.append([point.x, point.y, point.z, scaled])
-            elif(point.z > self.distance_from_ground and point.y < 0):
-                raw = raw_intensities[i]
-                scaled = (((raw - min_intensity_right) / range_intensity_right) ** 0.5) * factor
-                intensities_right.append(scaled)
-                points_right.append([point.x, point.y, point.z, scaled])
-
-        intensities = intensities_left + intensities_right
-        points = points_left + points_right
-
-        fields = [
-            PointField(name='x', offset=0, datatype=PointField.FLOAT32, count=1),
-            PointField(name='y', offset=4, datatype=PointField.FLOAT32, count=1),
-            PointField(name='z', offset=8, datatype=PointField.FLOAT32, count=1),
-            PointField(name='intensity', offset=12, datatype=PointField.FLOAT32, count=1),
-        ]
-
-        header = Header()
-        header.stamp = msg.header.stamp
-        header.frame_id = msg.header.frame_id
-
-        cloud = point_cloud2.create_cloud(header, fields, points)
-
+                scaled = (((raw - min_intensity) / range_intensity) ** 0.5) * factor
+                intensities.append(scaled)
+                points.append([point.x, point.y, point.z, scaled])
 
         xyz = np.array([[p[0], p[1], p[2]] for p in points])
         labels = dbscan.fit_predict(xyz)
@@ -168,7 +120,6 @@ class main_node(Node):
             cluster_points = points[labels == cluster_id]  # Get points in this cluster
             centroid = cluster_points.mean(axis=0)    # Compute centroid
             centroids.append(Point32(x=centroid[0], y=centroid[1], z=centroid[2]))
-
 
         classified_centroids = []
         for i, c in enumerate(centroids):
@@ -188,7 +139,7 @@ class main_node(Node):
                 local_intensities += [0.0] * (self.fixed_length - len(local_intensities))
 
             local_intensities = np.array([local_intensities])
-            sample_scaled = self.scaler.transform(local_intensities)
+            sample_scaled = local_intensities
             sample_tensor = torch.tensor(sample_scaled, dtype=torch.float32)
 
             with torch.no_grad():
@@ -200,6 +151,20 @@ class main_node(Node):
                 classified_centroids.append([c, "left"])
             elif label == "right":
                 classified_centroids.append([c, "right"])
+
+        delete_array = MarkerArray()
+
+        for i in range(self.prev_marker_count):
+            delete_marker = Marker()
+            delete_marker.header.frame_id = "Lidar_F"
+            delete_marker.header.stamp = self.get_clock().now().to_msg()
+            delete_marker.ns = "cylinders"
+            delete_marker.id = i
+            delete_marker.action = Marker.DELETE
+            delete_array.markers.append(delete_marker)
+
+        self.publisher_marker.publish(delete_array)
+
 
         marker_array = MarkerArray()
 
@@ -242,10 +207,7 @@ class main_node(Node):
             
             marker_array.markers.append(marker)
         self.publisher_marker.publish(marker_array)
-
-        for channel in msg.channels:
-            self.get_logger().info(f'Channel name: {channel.name}, values count: {len(channel.values)}')
-        
+        self.prev_marker_count = len(classified_centroids)
 
 def main(args=None):
     rclpy.init(args=args)

@@ -25,7 +25,6 @@ class main_node(Node):
         self.get_logger().info('Main node has been started!')
         self.subscription = self.create_subscription(PointCloud, '/carmaker/pointcloud', self.listener_callback, 10)
         self.subscription
-        self.publisher = self.create_publisher(PointCloud2, '/point_cloud', 10)
         self.publisher_marker = self.create_publisher(Marker, 'visualization_marker', 10)
         self.margin = 0.0005
         self.distance_from_ground = -0.1629 + 0.05
@@ -42,66 +41,20 @@ class main_node(Node):
             return
         
         raw_intensities = intensity_channel.values
-        # min_intensity = min(raw_intensities)
-        # max_intensity = max(raw_intensities)
-        # range_intensity = max_intensity - min_intensity if max_intensity != min_intensity else 1.0
-        intensities_left_raw = []
-        intensities_right_raw = []
-        factor = 100.0
+        min_intensity = min(raw_intensities)
+        max_intensity = max(raw_intensities)
+        range_intensity = max_intensity - min_intensity if max_intensity != min_intensity else 1.0
 
-        # for i, point in enumerate(msg.points):
-        #     if((point.z > self.distance_from_ground)):
-        #         raw = raw_intensities[i]
-        #         scaled = (((raw - min_intensity) / range_intensity) ** 0.5) * factor
-        #         intensities.append(scaled)
-        #         points.append([point.x, point.y, point.z, scaled])
+        intensities = []
+        points = []
+        factor = 100
 
         for i, point in enumerate(msg.points):
-            if(point.z > self.distance_from_ground and point.y > 0):
-                intensities_left_raw.append(raw_intensities[i])
-            elif(point.z > self.distance_from_ground and point.y < 0):
-                intensities_right_raw.append(raw_intensities[i])
-        
-        min_intensity_left = min(intensities_left_raw)
-        max_intensity_left = max(intensities_left_raw) 
-        range_intensity_left = max_intensity_left - min_intensity_left if max_intensity_left != min_intensity_left else 1.0
-
-        min_intensity_right = min(intensities_right_raw)
-        max_intensity_right = max(intensities_right_raw) 
-        range_intensity_right = max_intensity_right - min_intensity_right if max_intensity_right != min_intensity_right else 1.0
-
-        intensities_left = []
-        intensities_right = []
-        points_left = []
-        points_right = []
-
-        for i, point in enumerate(msg.points):
-            if(point.z > self.distance_from_ground and point.y > 0):
+            if((point.z > self.distance_from_ground)):
                 raw = raw_intensities[i]
-                scaled = (((raw - min_intensity_left) / range_intensity_left) ** 0.5) * factor
-                intensities_left.append(scaled)
-                points_left.append([point.x, point.y, point.z, scaled])
-            elif(point.z > self.distance_from_ground and point.y < 0):
-                raw = raw_intensities[i]
-                scaled = (((raw - min_intensity_right) / range_intensity_right) ** 0.5) * factor
-                intensities_right.append(scaled)
-                points_right.append([point.x, point.y, point.z, scaled])
-
-        intensities = intensities_left + intensities_right
-        points = points_left + points_right
-
-        fields = [
-            PointField(name='x', offset=0, datatype=PointField.FLOAT32, count=1),
-            PointField(name='y', offset=4, datatype=PointField.FLOAT32, count=1),
-            PointField(name='z', offset=8, datatype=PointField.FLOAT32, count=1),
-            PointField(name='intensity', offset=12, datatype=PointField.FLOAT32, count=1),
-        ]
-
-        header = Header()
-        header.stamp = msg.header.stamp
-        header.frame_id = msg.header.frame_id
-
-        cloud = point_cloud2.create_cloud(header, fields, points)
+                scaled = (((raw - min_intensity) / range_intensity) ** 0.5) * factor
+                intensities.append(scaled)
+                points.append([point.x, point.y, point.z, scaled])
 
 
         xyz = np.array([[p[0], p[1], p[2]] for p in points])
@@ -169,22 +122,16 @@ class main_node(Node):
         # Publish the marker
         self.publisher_marker.publish(marker)
 
-        self.publisher.publish(cloud)
-
 
         # for channel in msg.channels:
         #     self.get_logger().info(f'Channel name: {channel.name}, values count: {len(channel.values)}')
 
         #     for i, val in enumerate(channel.values[:3]):
         #         self.get_logger().info(f" value {i}: {val}")
-
-
-        for intensity in intensities_left[:3]:
-            self.get_logger().info(str(intensity))
     def save_array(self):
         import os
         intensity_array = np.array(self.intensity_samples)
-        save_path = os.path.expanduser("~/projects/perception_summer/cone_intensities.csv")
+        save_path = os.path.expanduser("~/projects/perception_summer/cone_intensities_3_new.csv")
 
         # Save with labels
         with open(save_path, "w") as f:
