@@ -1,0 +1,17 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:15:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_device[m[K’ is not a member of ‘[01m[Ktorch::cuda[m[K’
+   15 |         int current_device = torch::cuda::[01;31m[Kcurrent_device[m[K();
+      |                                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcudaDeviceProp[m[K’ was not declared in this scope
+   19 |         [01;31m[KcudaDeviceProp[m[K prop;
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:20:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kprop[m[K’ was not declared in this scope
+   20 |         cudaGetDeviceProperties(&[01;31m[Kprop[m[K, current_device);
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcudaGetDeviceProperties[m[K’ was not declared in this scope
+   20 |         [01;31m[KcudaGetDeviceProperties[m[K(&prop, current_device);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,12 @@
+[31mCMake Error at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:47 (enable_language):
+  No CMAKE_CUDA_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "CUDACXX" or the CMake cache entry CMAKE_CUDA_COMPILER to the full
+  path to the compiler, or to the compiler name if it is in the PATH.
+Call Stack (most recent call first):
+  /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+  /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  CMakeLists.txt:17 (find_package)
+
+[0m

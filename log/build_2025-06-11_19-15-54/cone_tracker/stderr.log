@@ -1,0 +1,16 @@
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:11:53:[m[K [01;31m[Kerror: [m[K‘[01m[KgetDeviceName[m[K’ is not a member of ‘[01m[Ktorch::cuda[m[K’
+   11 |             std::cout << "  Name: " << torch::cuda::[01;31m[KgetDeviceName[m[K(i) << "\n";
+      |                                                     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:12:59:[m[K [01;31m[Kerror: [m[K‘[01m[KgetDeviceCapability[m[K’ is not a member of ‘[01m[Ktorch::cuda[m[K’
+   12 |             std::cout << "  Capability: " << torch::cuda::[01;31m[KgetDeviceCapability[m[K(i).first << "."
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:13:39:[m[K [01;31m[Kerror: [m[K‘[01m[KgetDeviceCapability[m[K’ is not a member of ‘[01m[Ktorch::cuda[m[K’
+   13 |                       << torch::cuda::[01;31m[KgetDeviceCapability[m[K(i).second << "\n";
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:14:55:[m[K [01;31m[Kerror: [m[K‘[01m[KgetDeviceProperties[m[K’ is not a member of ‘[01m[Ktorch::cuda[m[K’
+   14 |             std::cout << "  Memory: " << torch::cuda::[01;31m[KgetDeviceProperties[m[K(i).totalGlobalMem / (1024 * 1024)
+      |                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

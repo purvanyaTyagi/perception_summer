@@ -1,0 +1,34 @@
+[0.013s] Invoking command in '/home/purvanya/projects/perception_summer/build/cone_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --build /home/purvanya/projects/perception_summer/build/cone_tracker -- -j12 -l12
+[0.047s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.158s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.192s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.194s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.204s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.217s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.232s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.261s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.263s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.365s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.427s] -- Could NOT find CUDA (missing: CUDA_INCLUDE_DIRS CUDA_CUDART_LIBRARY) (found version "12.1")
+[0.427s] [33mCMake Warning at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:31 (message):
+[0.427s]   PyTorch: CUDA cannot be found.  Depending on whether you are building
+[0.428s]   PyTorch or a PyTorch dependent library, the next warning / error will give
+[0.428s]   you more info.
+[0.428s] Call Stack (most recent call first):
+[0.428s]   /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+[0.428s]   /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+[0.428s]   CMakeLists.txt:17 (find_package)
+[0.428s] 
+[0.428s] [0m
+[0.428s] [31mCMake Error at /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:90 (message):
+[0.428s]   Your installed Caffe2 version uses CUDA but I cannot find the CUDA
+[0.428s]   libraries.  Please set the proper CUDA prefixes and / or install CUDA.
+[0.429s] Call Stack (most recent call first):
+[0.429s]   /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+[0.429s]   CMakeLists.txt:17 (find_package)
+[0.429s] 
+[0.429s] [0m
+[0.429s] -- Configuring incomplete, errors occurred!
+[0.429s] See also "/home/purvanya/projects/perception_summer/build/cone_tracker/CMakeFiles/CMakeOutput.log".
+[0.434s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.436s] Invoked command in '/home/purvanya/projects/perception_summer/build/cone_tracker' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --build /home/purvanya/projects/perception_summer/build/cone_tracker -- -j12 -l12

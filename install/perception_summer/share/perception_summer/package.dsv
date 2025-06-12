@@ -1,0 +1,6 @@
+source;share/perception_summer/hook/pythonpath.ps1
+source;share/perception_summer/hook/pythonpath.dsv
+source;share/perception_summer/hook/pythonpath.sh
+source;share/perception_summer/hook/ament_prefix_path.ps1
+source;share/perception_summer/hook/ament_prefix_path.dsv
+source;share/perception_summer/hook/ament_prefix_path.sh

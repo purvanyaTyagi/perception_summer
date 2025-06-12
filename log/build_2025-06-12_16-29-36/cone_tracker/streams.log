@@ -1,0 +1,26 @@
+[0.015s] Invoking command in '/home/purvanya/projects/perception_summer/build/cone_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --build /home/purvanya/projects/perception_summer/build/cone_tracker -- -j12 -l12
+[0.069s] [35m[1mConsolidate compiler generated dependencies of target main[0m
+[0.093s] [ 50%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[9.062s] [100%] [32m[1mLinking CXX executable main[0m
+[15.471s] [100%] Built target main
+[15.488s] Invoked command in '/home/purvanya/projects/perception_summer/build/cone_tracker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --build /home/purvanya/projects/perception_summer/build/cone_tracker -- -j12 -l12
+[15.503s] Invoking command in '/home/purvanya/projects/perception_summer/build/cone_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --install /home/purvanya/projects/perception_summer/build/cone_tracker
+[15.513s] -- Install configuration: ""
+[15.513s] -- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/lib/cone_tracker/main
+[15.518s] -- Set runtime path of "/home/purvanya/projects/perception_summer/install/cone_tracker/lib/cone_tracker/main" to ""
+[15.518s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/ament_index/resource_index/package_run_dependencies/cone_tracker
+[15.518s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/ament_index/resource_index/parent_prefix_path/cone_tracker
+[15.518s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/ament_prefix_path.sh
+[15.518s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/ament_prefix_path.dsv
+[15.518s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/path.sh
+[15.518s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/path.dsv
+[15.518s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.bash
+[15.518s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.sh
+[15.518s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.zsh
+[15.518s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.dsv
+[15.519s] -- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/package.dsv
+[15.519s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/ament_index/resource_index/packages/cone_tracker
+[15.519s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/cmake/cone_trackerConfig.cmake
+[15.519s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/cmake/cone_trackerConfig-version.cmake
+[15.519s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/package.xml
+[15.521s] Invoked command in '/home/purvanya/projects/perception_summer/build/cone_tracker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --install /home/purvanya/projects/perception_summer/build/cone_tracker

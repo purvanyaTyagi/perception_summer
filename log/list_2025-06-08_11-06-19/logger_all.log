@@ -1,0 +1,50 @@
+[0.088s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/purvanya/projects/perception_summer']
+[0.088s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/purvanya/projects/perception_summer'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a54865acc40>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7a5486573c70>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7a5486573c70>>, mixin_verb=('list',))
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.234s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/purvanya/projects/perception_summer'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extension 'ros'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extensions ['cmake', 'python']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extension 'cmake'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extension 'python'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extensions ['python_setup_py']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer) by extension 'python_setup_py'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/log) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/log) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/log) ignored
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extension 'ros'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extensions ['cmake', 'python']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extension 'cmake'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extension 'python'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extensions ['python_setup_py']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src) by extension 'python_setup_py'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src/perception_summer) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src/perception_summer) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src/perception_summer) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src/perception_summer) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src/perception_summer) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src/perception_summer) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src/perception_summer) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src/perception_summer) by extensions ['ros']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(/home/purvanya/projects/perception_summer/src/perception_summer) by extension 'ros'
+[0.274s] DEBUG:colcon.colcon_core.package_identification:Package '/home/purvanya/projects/perception_summer/src/perception_summer' with type 'ros.ament_python' and name 'perception_summer'
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

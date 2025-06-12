@@ -1,0 +1,19 @@
+[33mCMake Warning at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:31 (message):
+  PyTorch: CUDA cannot be found.  Depending on whether you are building
+  PyTorch or a PyTorch dependent library, the next warning / error will give
+  you more info.
+Call Stack (most recent call first):
+  /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+  /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  CMakeLists.txt:17 (find_package)
+
+[0m
+[31mCMake Error at /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:90 (message):
+  Your installed Caffe2 version uses CUDA but I cannot find the CUDA
+  libraries.  Please set the proper CUDA prefixes and / or install CUDA.
+Call Stack (most recent call first):
+  /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  CMakeLists.txt:17 (find_package)
+
+[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target main[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable main[0m
+[100%] Built target main
+-- Install configuration: ""
+-- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/lib/cone_tracker/main
+-- Set runtime path of "/home/purvanya/projects/perception_summer/install/cone_tracker/lib/cone_tracker/main" to ""
+-- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/ament_index/resource_index/package_run_dependencies/cone_tracker
+-- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/ament_index/resource_index/parent_prefix_path/cone_tracker
+-- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/ament_prefix_path.sh
+-- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/path.sh
+-- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/path.dsv
+-- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.bash
+-- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.sh
+-- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.zsh
+-- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.dsv
+-- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/package.dsv
+-- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/ament_index/resource_index/packages/cone_tracker
+-- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/cmake/cone_trackerConfig.cmake
+-- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/cmake/cone_trackerConfig-version.cmake
+-- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/package.xml

@@ -1,0 +1,25 @@
+[0.505s] Invoking command in '/home/purvanya/projects/perception_summer/src/perception_summer': PYTHONPATH=/home/purvanya/projects/perception_summer/build/perception_summer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception_summer build --build-base /home/purvanya/projects/perception_summer/build/perception_summer/build install --record /home/purvanya/projects/perception_summer/build/perception_summer/install.log --single-version-externally-managed install_data
+[0.684s] running egg_info
+[0.684s] writing ../../build/perception_summer/perception_summer.egg-info/PKG-INFO
+[0.684s] writing dependency_links to ../../build/perception_summer/perception_summer.egg-info/dependency_links.txt
+[0.684s] writing entry points to ../../build/perception_summer/perception_summer.egg-info/entry_points.txt
+[0.684s] writing requirements to ../../build/perception_summer/perception_summer.egg-info/requires.txt
+[0.684s] writing top-level names to ../../build/perception_summer/perception_summer.egg-info/top_level.txt
+[0.685s] reading manifest file '../../build/perception_summer/perception_summer.egg-info/SOURCES.txt'
+[0.686s] writing manifest file '../../build/perception_summer/perception_summer.egg-info/SOURCES.txt'
+[0.686s] running build
+[0.687s] running build_py
+[0.687s] copying perception_summer/predict.py -> /home/purvanya/projects/perception_summer/build/perception_summer/build/lib/perception_summer
+[0.687s] running install
+[0.687s] running install_lib
+[0.687s] copying /home/purvanya/projects/perception_summer/build/perception_summer/build/lib/perception_summer/predict.py -> /home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages/perception_summer
+[0.688s] byte-compiling /home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages/perception_summer/predict.py to predict.cpython-310.pyc
+[0.689s] running install_data
+[0.689s] running install_egg_info
+[0.690s] removing '/home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages/perception_summer-0.0.0-py3.10.egg-info' (and everything under it)
+[0.691s] Copying ../../build/perception_summer/perception_summer.egg-info to /home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages/perception_summer-0.0.0-py3.10.egg-info
+[0.691s] running install_scripts
+[0.706s] Installing main script to /home/purvanya/projects/perception_summer/install/perception_summer/lib/perception_summer
+[0.706s] Installing predict script to /home/purvanya/projects/perception_summer/install/perception_summer/lib/perception_summer
+[0.706s] writing list of installed files to '/home/purvanya/projects/perception_summer/build/perception_summer/install.log'
+[0.736s] Invoked command in '/home/purvanya/projects/perception_summer/src/perception_summer' returned '0': PYTHONPATH=/home/purvanya/projects/perception_summer/build/perception_summer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception_summer build --build-base /home/purvanya/projects/perception_summer/build/perception_summer/build install --record /home/purvanya/projects/perception_summer/build/perception_summer/install.log --single-version-externally-managed install_data

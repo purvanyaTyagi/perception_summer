@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target main[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:15:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_device[m[K’ is not a member of ‘[01m[Ktorch::cuda[m[K’
+   15 |         torch::Device current_device = torch::cuda::[01;31m[Kcurrent_device[m[K();
+      |                                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:19:54:[m[K [01;31m[Kerror: [m[K‘[01m[KgetDeviceName[m[K’ is not a member of ‘[01m[Ktorch::cuda[m[K’
+   19 |         std::cout << "Device Name: " << torch::cuda::[01;31m[KgetDeviceName[m[K(current_device.index()) << std::endl;
+      |                                                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:22:48:[m[K [01;31m[Kerror: [m[K‘[01m[KTORCH_CUDA_VERSION[m[K’ was not declared in this scope; did you mean ‘[01m[KTORCH_ABI_VERSION[m[K’?
+   22 |         std::cout << "Torch CUDA version: " << [01;31m[KTORCH_CUDA_VERSION[m[K << std::endl;
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                [32m[KTORCH_ABI_VERSION[m[K
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

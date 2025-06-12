@@ -1,0 +1,49 @@
+[0.010s] Invoking command in '/home/purvanya/projects/perception_summer/build/cone_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake /home/purvanya/projects/perception_summer/src/cone_tracker -DCMAKE_INSTALL_PREFIX=/home/purvanya/projects/perception_summer/install/cone_tracker
+[0.075s] -- The C compiler identification is GNU 11.4.0
+[0.135s] -- The CXX compiler identification is GNU 11.4.0
+[0.141s] -- Detecting C compiler ABI info
+[0.201s] -- Detecting C compiler ABI info - done
+[0.207s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.207s] -- Detecting C compile features
+[0.208s] -- Detecting C compile features - done
+[0.210s] -- Detecting CXX compiler ABI info
+[0.279s] -- Detecting CXX compiler ABI info - done
+[0.284s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.285s] -- Detecting CXX compile features
+[0.285s] -- Detecting CXX compile features - done
+[0.289s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.419s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.502s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.538s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.542s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.548s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.557s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.569s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.601s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.603s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.683s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.711s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.745s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.752s] -- Looking for pthread.h
+[0.845s] -- Looking for pthread.h - found
+[0.845s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.967s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.970s] -- Found Threads: TRUE  
+[1.065s] -- Found CUDA: /usr/local/cuda (found version "12.6") 
+[1.105s] -- The CUDA compiler identification is unknown
+[1.106s] [31mCMake Error at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:47 (enable_language):
+[1.106s]   No CMAKE_CUDA_COMPILER could be found.
+[1.106s] 
+[1.107s]   Tell CMake where to find the compiler by setting either the environment
+[1.107s]   variable "CUDACXX" or the CMake cache entry CMAKE_CUDA_COMPILER to the full
+[1.107s]   path to the compiler, or to the compiler name if it is in the PATH.
+[1.107s] Call Stack (most recent call first):
+[1.107s]   /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+[1.107s]   /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+[1.107s]   CMakeLists.txt:17 (find_package)
+[1.107s] 
+[1.107s] [0m
+[1.108s] -- Configuring incomplete, errors occurred!
+[1.108s] See also "/home/purvanya/projects/perception_summer/build/cone_tracker/CMakeFiles/CMakeOutput.log".
+[1.109s] See also "/home/purvanya/projects/perception_summer/build/cone_tracker/CMakeFiles/CMakeError.log".
+[1.119s] Invoked command in '/home/purvanya/projects/perception_summer/build/cone_tracker' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake /home/purvanya/projects/perception_summer/src/cone_tracker -DCMAKE_INSTALL_PREFIX=/home/purvanya/projects/perception_summer/install/cone_tracker

@@ -1,0 +1,19 @@
+[0.014s] Invoking command in '/home/purvanya/projects/perception_summer/build/cone_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --build /home/purvanya/projects/perception_summer/build/cone_tracker -- -j12 -l12
+[0.119s] [ 50%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[6.220s] [01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[6.220s] [01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:15:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_device[m[K’ is not a member of ‘[01m[Ktorch::cuda[m[K’
+[6.220s]    15 |         int current_device = torch::cuda::[01;31m[Kcurrent_device[m[K();
+[6.220s]       |                                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.224s] [01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcudaDeviceProp[m[K’ was not declared in this scope
+[6.225s]    19 |         [01;31m[KcudaDeviceProp[m[K prop;
+[6.225s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.228s] [01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:20:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kprop[m[K’ was not declared in this scope
+[6.228s]    20 |         cudaGetDeviceProperties(&[01;31m[Kprop[m[K, current_device);
+[6.228s]       |                                  [01;31m[K^~~~[m[K
+[6.234s] [01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcudaGetDeviceProperties[m[K’ was not declared in this scope
+[6.234s]    20 |         [01;31m[KcudaGetDeviceProperties[m[K(&prop, current_device);
+[6.234s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.563s] gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+[8.563s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/main.dir/all] Error 2
+[8.564s] gmake: *** [Makefile:146: all] Error 2
+[8.566s] Invoked command in '/home/purvanya/projects/perception_summer/build/cone_tracker' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --build /home/purvanya/projects/perception_summer/build/cone_tracker -- -j12 -l12

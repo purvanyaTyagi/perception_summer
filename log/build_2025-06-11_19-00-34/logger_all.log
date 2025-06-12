@@ -1,0 +1,167 @@
+[0.074s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.074s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7454640a8790>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7454640a8130>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7454640a8130>>, mixin_verb=('build',))
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.191s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/purvanya/projects/perception_summer'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/cone_tracker) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/cone_tracker) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/cone_tracker) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/cone_tracker) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/cone_tracker) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/cone_tracker) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/cone_tracker) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/cone_tracker) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/cone_tracker) by extension 'ros'
+[0.208s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cone_tracker' with type 'ros.ament_cmake' and name 'cone_tracker'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_summer) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_summer) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_summer) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_summer) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_summer) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_summer) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_summer) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_summer) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_summer) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/perception_summer' with type 'ros.ament_python' and name 'perception_summer'
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.224s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/purvanya/projects/ros2_wc/install
+[0.224s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/purvanya/projects/EUFS/install
+[0.225s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 344 installed packages in /opt/ros/humble
+[0.226s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'cone_tracker' build argument 'cmake_args' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'cone_tracker' build argument 'cmake_target' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'cone_tracker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'cone_tracker' build argument 'cmake_clean_cache' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'cone_tracker' build argument 'cmake_clean_first' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'cone_tracker' build argument 'cmake_force_configure' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'cone_tracker' build argument 'ament_cmake_args' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'cone_tracker' build argument 'catkin_cmake_args' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'cone_tracker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.253s] DEBUG:colcon.colcon_core.verb:Building package 'cone_tracker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/purvanya/projects/perception_summer/build/cone_tracker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/purvanya/projects/perception_summer/install/cone_tracker', 'merge_install': False, 'path': '/home/purvanya/projects/perception_summer/src/cone_tracker', 'symlink_install': False, 'test_result_base': None}
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'perception_summer' build argument 'cmake_args' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'perception_summer' build argument 'cmake_target' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'perception_summer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'perception_summer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'perception_summer' build argument 'cmake_clean_first' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'perception_summer' build argument 'cmake_force_configure' from command line to 'False'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'perception_summer' build argument 'ament_cmake_args' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'perception_summer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.253s] Level 5:colcon.colcon_core.verb:set package 'perception_summer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.253s] DEBUG:colcon.colcon_core.verb:Building package 'perception_summer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/purvanya/projects/perception_summer/build/perception_summer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/purvanya/projects/perception_summer/install/perception_summer', 'merge_install': False, 'path': '/home/purvanya/projects/perception_summer/src/perception_summer', 'symlink_install': False, 'test_result_base': None}
+[0.253s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.254s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.254s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/purvanya/projects/perception_summer/src/cone_tracker' with build type 'ament_cmake'
+[0.255s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/purvanya/projects/perception_summer/src/cone_tracker'
+[0.256s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.256s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.256s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.258s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/purvanya/projects/perception_summer/src/perception_summer' with build type 'ament_python'
+[0.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception_summer', 'ament_prefix_path')
+[0.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvanya/projects/perception_summer/install/perception_summer/share/perception_summer/hook/ament_prefix_path.ps1'
+[0.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purvanya/projects/perception_summer/install/perception_summer/share/perception_summer/hook/ament_prefix_path.dsv'
+[0.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvanya/projects/perception_summer/install/perception_summer/share/perception_summer/hook/ament_prefix_path.sh'
+[0.260s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.260s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purvanya/projects/perception_summer/build/cone_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake /home/purvanya/projects/perception_summer/src/cone_tracker -DCMAKE_INSTALL_PREFIX=/home/purvanya/projects/perception_summer/install/cone_tracker
+[0.466s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/purvanya/projects/perception_summer/src/perception_summer'
+[0.467s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.467s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purvanya/projects/perception_summer/src/perception_summer': PYTHONPATH=/home/purvanya/projects/perception_summer/build/perception_summer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception_summer build --build-base /home/purvanya/projects/perception_summer/build/perception_summer/build install --record /home/purvanya/projects/perception_summer/build/perception_summer/install.log --single-version-externally-managed install_data
+[0.937s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purvanya/projects/perception_summer/src/perception_summer' returned '0': PYTHONPATH=/home/purvanya/projects/perception_summer/build/perception_summer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception_summer build --build-base /home/purvanya/projects/perception_summer/build/perception_summer/build install --record /home/purvanya/projects/perception_summer/build/perception_summer/install.log --single-version-externally-managed install_data
+[0.940s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/perception_summer' for CMake module files
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/perception_summer' for CMake config files
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/perception_summer/lib'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/perception_summer/bin'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/perception_summer/lib/pkgconfig/perception_summer.pc'
+[0.943s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages'
+[0.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception_summer', 'pythonpath')
+[0.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvanya/projects/perception_summer/install/perception_summer/share/perception_summer/hook/pythonpath.ps1'
+[0.944s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purvanya/projects/perception_summer/install/perception_summer/share/perception_summer/hook/pythonpath.dsv'
+[0.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvanya/projects/perception_summer/install/perception_summer/share/perception_summer/hook/pythonpath.sh'
+[0.945s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/perception_summer/bin'
+[0.945s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(perception_summer)
+[0.945s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvanya/projects/perception_summer/install/perception_summer/share/perception_summer/package.ps1'
+[0.946s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purvanya/projects/perception_summer/install/perception_summer/share/perception_summer/package.dsv'
+[0.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvanya/projects/perception_summer/install/perception_summer/share/perception_summer/package.sh'
+[0.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvanya/projects/perception_summer/install/perception_summer/share/perception_summer/package.bash'
+[0.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvanya/projects/perception_summer/install/perception_summer/share/perception_summer/package.zsh'
+[0.948s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purvanya/projects/perception_summer/install/perception_summer/share/colcon-core/packages/perception_summer)
+[1.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purvanya/projects/perception_summer/build/cone_tracker' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake /home/purvanya/projects/perception_summer/src/cone_tracker -DCMAKE_INSTALL_PREFIX=/home/purvanya/projects/perception_summer/install/cone_tracker
+[1.242s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cone_tracker)
+[1.242s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/cone_tracker' for CMake module files
+[1.242s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/cone_tracker' for CMake config files
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/cone_tracker/bin'
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/cone_tracker/lib/pkgconfig/cone_tracker.pc'
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/cone_tracker/lib/python3.10/site-packages'
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/purvanya/projects/perception_summer/install/cone_tracker/bin'
+[1.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/package.ps1'
+[1.244s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/package.dsv'
+[1.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/package.sh'
+[1.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/package.bash'
+[1.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/package.zsh'
+[1.245s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purvanya/projects/perception_summer/install/cone_tracker/share/colcon-core/packages/cone_tracker)
+[1.255s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.255s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.255s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[1.255s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.261s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.261s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.261s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.290s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.290s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvanya/projects/perception_summer/install/local_setup.ps1'
+[1.292s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/purvanya/projects/perception_summer/install/_local_setup_util_ps1.py'
+[1.294s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvanya/projects/perception_summer/install/setup.ps1'
+[1.295s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvanya/projects/perception_summer/install/local_setup.sh'
+[1.295s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/purvanya/projects/perception_summer/install/_local_setup_util_sh.py'
+[1.296s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvanya/projects/perception_summer/install/setup.sh'
+[1.297s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvanya/projects/perception_summer/install/local_setup.bash'
+[1.297s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvanya/projects/perception_summer/install/setup.bash'
+[1.298s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvanya/projects/perception_summer/install/local_setup.zsh'
+[1.298s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvanya/projects/perception_summer/install/setup.zsh'

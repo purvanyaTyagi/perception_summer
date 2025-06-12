@@ -1,0 +1,4 @@
+[console_scripts]
+main = perception_summer.main:main
+predict = perception_summer.predict:main
+

@@ -1,0 +1,87 @@
+[0.012s] Invoking command in '/home/purvanya/projects/perception_summer/build/cone_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --build /home/purvanya/projects/perception_summer/build/cone_tracker -- -j12 -l12
+[0.032s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.128s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.148s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.149s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.153s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.159s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.168s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.188s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.189s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.269s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.325s] -- PyTorch: CUDA detected: 12.6
+[0.325s] -- PyTorch: CUDA nvcc is: /usr/local/cuda/bin/nvcc
+[0.325s] -- PyTorch: CUDA toolkit directory: /usr/local/cuda
+[0.413s] -- PyTorch: Header version is: 12.6
+[0.479s] [33mCMake Warning at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:140 (message):
+[0.479s]   Failed to compute shorthash for libnvrtc.so
+[0.479s] Call Stack (most recent call first):
+[0.479s]   /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+[0.479s]   /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+[0.479s]   CMakeLists.txt:17 (find_package)
+[0.479s] 
+[0.479s] [0m
+[0.480s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.480s]   The package name passed to `find_package_handle_standard_args` (nvtx3) does
+[0.480s]   not match the name of the calling package (Caffe2).  This can lead to
+[0.480s]   problems in calling code that expects `find_package` result variables
+[0.480s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.480s] Call Stack (most recent call first):
+[0.480s]   /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:178 (find_package_handle_standard_args)
+[0.480s]   /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+[0.480s]   /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+[0.480s]   CMakeLists.txt:17 (find_package)
+[0.480s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.480s] [0m
+[0.480s] [33mCMake Warning at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:184 (message):
+[0.480s]   Cannot find NVTX3, find old NVTX instead
+[0.480s] Call Stack (most recent call first):
+[0.480s]   /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+[0.480s]   /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+[0.480s]   CMakeLists.txt:17 (find_package)
+[0.480s] 
+[0.480s] [0m
+[0.480s] -- Could NOT find nvtx3 (missing: nvtx3_dir) 
+[0.480s] -- USE_CUDNN is set to 0. Compiling without cuDNN support
+[0.480s] -- USE_CUSPARSELT is set to 0. Compiling without cuSPARSELt support
+[0.480s] -- USE_CUDSS is set to 0. Compiling without cuDSS support
+[0.480s] -- USE_CUFILE is set to 0. Compiling without cuFile support
+[1.130s] -- Automatic GPU detection failed. Building for common architectures.
+[1.130s] -- Autodetected CUDA architecture(s): 5.0;8.0;8.6;8.9;9.0;9.0a
+[1.130s] -- Added CUDA NVCC flags for: -gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_89,code=sm_89;-gencode;arch=compute_90,code=sm_90;-gencode;arch=compute_90a,code=sm_90a
+[1.147s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.196s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.196s] -- Configured cppcheck include dirs: 
+[1.196s] -- Configured cppcheck exclude dirs and/or files: 
+[1.196s] -- Added test 'lint_cmake' to check CMake code style
+[1.196s] -- Added test 'uncrustify' to check C / C++ code style
+[1.196s] -- Configured uncrustify additional arguments: 
+[1.196s] -- Added test 'xmllint' to check XML markup files
+[1.197s] -- Configuring done
+[1.203s] -- Generating done
+[1.205s] -- Build files have been written to: /home/purvanya/projects/perception_summer/build/cone_tracker
+[1.232s] [35m[1mConsolidate compiler generated dependencies of target main[0m
+[1.272s] [ 50%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[9.112s] [100%] [32m[1mLinking CXX executable main[0m
+[10.260s] [100%] Built target main
+[10.275s] Invoked command in '/home/purvanya/projects/perception_summer/build/cone_tracker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --build /home/purvanya/projects/perception_summer/build/cone_tracker -- -j12 -l12
+[10.291s] Invoking command in '/home/purvanya/projects/perception_summer/build/cone_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --install /home/purvanya/projects/perception_summer/build/cone_tracker
+[10.297s] -- Install configuration: ""
+[10.297s] -- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/lib/cone_tracker/main
+[10.297s] -- Set runtime path of "/home/purvanya/projects/perception_summer/install/cone_tracker/lib/cone_tracker/main" to ""
+[10.297s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/ament_index/resource_index/package_run_dependencies/cone_tracker
+[10.297s] -- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/share/ament_index/resource_index/parent_prefix_path/cone_tracker
+[10.297s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/ament_prefix_path.sh
+[10.297s] -- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/ament_prefix_path.dsv
+[10.298s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/path.sh
+[10.298s] -- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/environment/path.dsv
+[10.298s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.bash
+[10.298s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.sh
+[10.298s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.zsh
+[10.298s] -- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/local_setup.dsv
+[10.298s] -- Installing: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/package.dsv
+[10.298s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/ament_index/resource_index/packages/cone_tracker
+[10.298s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/cmake/cone_trackerConfig.cmake
+[10.298s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/cmake/cone_trackerConfig-version.cmake
+[10.298s] -- Up-to-date: /home/purvanya/projects/perception_summer/install/cone_tracker/share/cone_tracker/package.xml
+[10.299s] Invoked command in '/home/purvanya/projects/perception_summer/build/cone_tracker' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --install /home/purvanya/projects/perception_summer/build/cone_tracker

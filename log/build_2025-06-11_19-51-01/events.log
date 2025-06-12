@@ -1,0 +1,211 @@
+[0.000000] (-) TimerEvent: {}
+[0.000336] (cone_tracker) JobQueued: {'identifier': 'cone_tracker', 'dependencies': OrderedDict()}
+[0.000485] (perception_summer) JobQueued: {'identifier': 'perception_summer', 'dependencies': OrderedDict()}
+[0.000890] (cone_tracker) JobStarted: {'identifier': 'cone_tracker'}
+[0.005009] (perception_summer) JobStarted: {'identifier': 'perception_summer'}
+[0.009798] (cone_tracker) JobProgress: {'identifier': 'cone_tracker', 'progress': 'cmake'}
+[0.010205] (cone_tracker) JobProgress: {'identifier': 'cone_tracker', 'progress': 'build'}
+[0.010724] (cone_tracker) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/purvanya/projects/perception_summer/build/cone_tracker', '--', '-j12', '-l12'], 'cwd': '/home/purvanya/projects/perception_summer/build/cone_tracker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('CUDACXX', '/usr/local/cuda/bin/nvcc'), ('LANGUAGE', 'en_IN:en'), ('USER', 'purvanya'), ('PAM_KWALLET5_LOGIN', '/run/user/1000/kwallet5.socket'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2012'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('XCURSOR_SIZE', '24'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/opt/libtorch/lib:/usr/local/cuda/lib64:/opt/libtorch/lib:/home/purvanya/projects/EUFS/install/eufs_plugins/lib:/home/purvanya/projects/EUFS/install/eufs_models/lib:/home/purvanya/projects/EUFS/install/eufs_msgs/lib:/home/purvanya/projects/ros2_wc/install/dv_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/purvanya'), ('CHROME_DESKTOP', 'code.desktop'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('TERM_PROGRAM_VERSION', '1.98.0'), ('DESKTOP_SESSION', 'plasma'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/purvanya/.gtkrc:/home/purvanya/.config/gtkrc'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1878'), ('BUNDLED_DEBUGPY_PATH', '/home/purvanya/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('CPLUS_INCLUDE_PATH', '/usr/local/include/eigen3:/usr/local/include/eigen3:'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/purvanya/projects/perception_summer/install:/home/purvanya/projects/ros2_wc/install:/home/purvanya/projects/EUFS/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'purvanya'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('EUFS_MASTER', '/home/purvanya/projects/EUFS/src'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/purvanya/.gtkrc-2.0:/home/purvanya/.config/gtkrc-2.0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/usr/local/cuda/bin:/opt/ghidra:/home/purvanya/.local/bin:/usr/local/cuda/bin:/opt/ghidra:/opt/ros/humble/bin:/home/purvanya/.cargo/bin:/home/purvanya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/purvanya/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/purvanya/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/purvanya-Nitro-ANV15-51:@/tmp/.ICE-unix/2303,unix/purvanya-Nitro-ANV15-51:/tmp/.ICE-unix/2303'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/purvanya/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-f8ed5953ccbaea1c.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/purvanya/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-19315f878c.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXX0UGoUp/agent.1925'), ('AMENT_PREFIX_PATH', '/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/perception_summer/install/cone_tracker:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_sensors:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/home/purvanya/projects/EUFS/install/eufs_plugins:/home/purvanya/projects/EUFS/install/eufs_models:/home/purvanya/projects/EUFS/install/eufs_msgs:/home/purvanya/projects/ros2_wc/install/dv_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'KDE'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('XDG_VTNR', '1'), ('PWD', '/home/purvanya/projects/perception_summer/build/cone_tracker'), ('LC_ALL', 'en_US.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/home/purvanya/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages:/home/purvanya/projects/EUFS/install/eufs_launcher/lib/python3.10/site-packages:/home/purvanya/projects/EUFS/install/eufs_tracks/lib/python3.10/site-packages:/home/purvanya/projects/EUFS/install/eufs_rqt/lib/python3.10/site-packages:/home/purvanya/projects/EUFS/install/eufs_racecar/lib/python3.10/site-packages:/home/purvanya/projects/EUFS/install/eufs_msgs/local/lib/python3.10/dist-packages:/home/purvanya/projects/ros2_wc/install/dv_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('KDE_SESSION_UID', '1000'), ('SGX_AESM_ADDR', '1'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/purvanya/projects/perception_summer/install/cone_tracker:/home/purvanya/projects/EUFS/install/eufs_sensors:/home/purvanya/projects/EUFS/install/eufs_plugins:/home/purvanya/projects/EUFS/install/eufs_models:/home/purvanya/projects/EUFS/install/eufs_msgs:/home/purvanya/projects/ros2_wc/install/dv_msgs:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble')]), 'shell': False}
+[0.032388] (cone_tracker) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099941] (-) TimerEvent: {}
+[0.130732] (cone_tracker) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.150194] (cone_tracker) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.151855] (cone_tracker) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.155523] (cone_tracker) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.161869] (cone_tracker) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.169870] (cone_tracker) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.190761] (cone_tracker) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.191848] (cone_tracker) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.200371] (-) TimerEvent: {}
+[0.268691] (cone_tracker) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.300592] (-) TimerEvent: {}
+[0.323510] (cone_tracker) StdoutLine: {'line': b'-- PyTorch: CUDA detected: 12.6\n'}
+[0.323722] (cone_tracker) StdoutLine: {'line': b'-- PyTorch: CUDA nvcc is: /usr/local/cuda/bin/nvcc\n'}
+[0.323822] (cone_tracker) StdoutLine: {'line': b'-- PyTorch: CUDA toolkit directory: /usr/local/cuda\n'}
+[0.400691] (-) TimerEvent: {}
+[0.412464] (cone_tracker) StdoutLine: {'line': b'-- PyTorch: Header version is: 12.6\n'}
+[0.476603] (perception_summer) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/perception_summer', 'build', '--build-base', '/home/purvanya/projects/perception_summer/build/perception_summer/build', 'install', '--record', '/home/purvanya/projects/perception_summer/build/perception_summer/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/purvanya/projects/perception_summer/src/perception_summer', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'KDE_FULL_SESSION': 'true', 'CUDACXX': '/usr/local/cuda/bin/nvcc', 'LANGUAGE': 'en_IN:en', 'USER': 'purvanya', 'PAM_KWALLET5_LOGIN': '/run/user/1000/kwallet5.socket', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '2012', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'XCURSOR_SIZE': '24', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda/lib64:/opt/libtorch/lib:/usr/local/cuda/lib64:/opt/libtorch/lib:/home/purvanya/projects/EUFS/install/eufs_plugins/lib:/home/purvanya/projects/EUFS/install/eufs_models/lib:/home/purvanya/projects/EUFS/install/eufs_msgs/lib:/home/purvanya/projects/ros2_wc/install/dv_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/purvanya', 'CHROME_DESKTOP': 'code.desktop', 'KDE_APPLICATIONS_AS_SCOPE': '1', 'TERM_PROGRAM_VERSION': '1.98.0', 'DESKTOP_SESSION': 'plasma', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GTK_RC_FILES': '/etc/gtk/gtkrc:/home/purvanya/.gtkrc:/home/purvanya/.config/gtkrc', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'KDE_SESSION_VERSION': '5', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '1878', 'BUNDLED_DEBUGPY_PATH': '/home/purvanya/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'CPLUS_INCLUDE_PATH': '/usr/local/include/eigen3:/usr/local/include/eigen3:', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/purvanya/projects/perception_summer/install:/home/purvanya/projects/ros2_wc/install:/home/purvanya/projects/EUFS/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'purvanya', 'QT_AUTO_SCREEN_SCALE_FACTOR': '0', 'EUFS_MASTER': '/home/purvanya/projects/EUFS/src', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:', 'ROS_LOCALHOST_ONLY': '0', 'GTK2_RC_FILES': '/etc/gtk-2.0/gtkrc:/home/purvanya/.gtkrc-2.0:/home/purvanya/.config/gtkrc-2.0', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/usr/local/cuda/bin:/opt/ghidra:/home/purvanya/.local/bin:/usr/local/cuda/bin:/opt/ghidra:/opt/ros/humble/bin:/home/purvanya/.cargo/bin:/home/purvanya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/purvanya/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/purvanya/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/purvanya-Nitro-ANV15-51:@/tmp/.ICE-unix/2303,unix/purvanya-Nitro-ANV15-51:/tmp/.ICE-unix/2303', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XCURSOR_THEME': 'breeze_cursors', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/purvanya/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-f8ed5953ccbaea1c.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'KDE', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'KDE', 'XAUTHORITY': '/home/purvanya/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-19315f878c.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/ssh-XXXXXX0UGoUp/agent.1925', 'AMENT_PREFIX_PATH': '/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/perception_summer/install/cone_tracker:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_sensors:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/home/purvanya/projects/EUFS/install/eufs_plugins:/home/purvanya/projects/EUFS/install/eufs_models:/home/purvanya/projects/EUFS/install/eufs_msgs:/home/purvanya/projects/ros2_wc/install/dv_msgs:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'KDE', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'XDG_VTNR': '1', 'PWD': '/home/purvanya/projects/perception_summer/build/perception_summer', 'LC_ALL': 'en_US.UTF-8', 'CUDA_HOME': '/usr/local/cuda', 'XDG_CONFIG_DIRS': '/home/purvanya/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings', 'GAZEBO_PLUGIN_PATH': '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:', 'CLUTTER_IM_MODULE': 'ibus', 'XDG_DATA_DIRS': '/usr/share/plasma:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/purvanya/projects/perception_summer/build/perception_summer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages:/home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages:/home/purvanya/projects/EUFS/install/eufs_launcher/lib/python3.10/site-packages:/home/purvanya/projects/EUFS/install/eufs_tracks/lib/python3.10/site-packages:/home/purvanya/projects/EUFS/install/eufs_rqt/lib/python3.10/site-packages:/home/purvanya/projects/EUFS/install/eufs_racecar/lib/python3.10/site-packages:/home/purvanya/projects/EUFS/install/eufs_msgs/local/lib/python3.10/dist-packages:/home/purvanya/projects/ros2_wc/install/dv_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'KDE_SESSION_UID': '1000', 'SGX_AESM_ADDR': '1', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/purvanya/projects/perception_summer/install/cone_tracker:/home/purvanya/projects/EUFS/install/eufs_sensors:/home/purvanya/projects/EUFS/install/eufs_plugins:/home/purvanya/projects/EUFS/install/eufs_models:/home/purvanya/projects/EUFS/install/eufs_msgs:/home/purvanya/projects/ros2_wc/install/dv_msgs'}, 'shell': False}
+[0.491304] (cone_tracker) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:140 (message):\n'}
+[0.491668] (cone_tracker) StderrLine: {'line': b'  Failed to compute shorthash for libnvrtc.so\n'}
+[0.491781] (cone_tracker) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.491872] (cone_tracker) StderrLine: {'line': b'  /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)\n'}
+[0.491961] (cone_tracker) StderrLine: {'line': b'  /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)\n'}
+[0.492047] (cone_tracker) StderrLine: {'line': b'  CMakeLists.txt:17 (find_package)\n'}
+[0.492132] (cone_tracker) StderrLine: {'line': b'\n'}
+[0.492217] (cone_tracker) StderrLine: {'line': b'\x1b[0m\n'}
+[0.492300] (cone_tracker) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[0.492383] (cone_tracker) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (nvtx3) does\n'}
+[0.492462] (cone_tracker) StderrLine: {'line': b'  not match the name of the calling package (Caffe2).  This can lead to\n'}
+[0.492541] (cone_tracker) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[0.492619] (cone_tracker) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[0.492714] (cone_tracker) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.492796] (cone_tracker) StderrLine: {'line': b'  /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:178 (find_package_handle_standard_args)\n'}
+[0.492881] (cone_tracker) StderrLine: {'line': b'  /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)\n'}
+[0.492973] (cone_tracker) StderrLine: {'line': b'  /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)\n'}
+[0.493071] (cone_tracker) StderrLine: {'line': b'  CMakeLists.txt:17 (find_package)\n'}
+[0.493172] (cone_tracker) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.493261] (cone_tracker) StderrLine: {'line': b'\x1b[0m\n'}
+[0.493354] (cone_tracker) StdoutLine: {'line': b'-- Could NOT find nvtx3 (missing: nvtx3_dir) \n'}
+[0.493474] (cone_tracker) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:184 (message):\n'}
+[0.493597] (cone_tracker) StderrLine: {'line': b'  Cannot find NVTX3, find old NVTX instead\n'}
+[0.493787] (cone_tracker) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.493945] (cone_tracker) StderrLine: {'line': b'  /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)\n'}
+[0.494102] (cone_tracker) StderrLine: {'line': b'  /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)\n'}
+[0.494261] (cone_tracker) StderrLine: {'line': b'  CMakeLists.txt:17 (find_package)\n'}
+[0.494456] (cone_tracker) StderrLine: {'line': b'\n'}
+[0.494642] (cone_tracker) StderrLine: {'line': b'\x1b[0m\n'}
+[0.494859] (cone_tracker) StdoutLine: {'line': b'-- USE_CUDNN is set to 0. Compiling without cuDNN support\n'}
+[0.495042] (cone_tracker) StdoutLine: {'line': b'-- USE_CUSPARSELT is set to 0. Compiling without cuSPARSELt support\n'}
+[0.495215] (cone_tracker) StdoutLine: {'line': b'-- USE_CUDSS is set to 0. Compiling without cuDSS support\n'}
+[0.495413] (cone_tracker) StdoutLine: {'line': b'-- USE_CUFILE is set to 0. Compiling without cuFile support\n'}
+[0.500859] (-) TimerEvent: {}
+[0.601553] (-) TimerEvent: {}
+[0.665915] (perception_summer) StdoutLine: {'line': b'running egg_info\n'}
+[0.666367] (perception_summer) StdoutLine: {'line': b'writing ../../build/perception_summer/perception_summer.egg-info/PKG-INFO\n'}
+[0.666516] (perception_summer) StdoutLine: {'line': b'writing dependency_links to ../../build/perception_summer/perception_summer.egg-info/dependency_links.txt\n'}
+[0.666634] (perception_summer) StdoutLine: {'line': b'writing entry points to ../../build/perception_summer/perception_summer.egg-info/entry_points.txt\n'}
+[0.666762] (perception_summer) StdoutLine: {'line': b'writing requirements to ../../build/perception_summer/perception_summer.egg-info/requires.txt\n'}
+[0.666852] (perception_summer) StdoutLine: {'line': b'writing top-level names to ../../build/perception_summer/perception_summer.egg-info/top_level.txt\n'}
+[0.667811] (perception_summer) StdoutLine: {'line': b"reading manifest file '../../build/perception_summer/perception_summer.egg-info/SOURCES.txt'\n"}
+[0.668391] (perception_summer) StdoutLine: {'line': b"writing manifest file '../../build/perception_summer/perception_summer.egg-info/SOURCES.txt'\n"}
+[0.668508] (perception_summer) StdoutLine: {'line': b'running build\n'}
+[0.668590] (perception_summer) StdoutLine: {'line': b'running build_py\n'}
+[0.668692] (perception_summer) StdoutLine: {'line': b'running install\n'}
+[0.668895] (perception_summer) StdoutLine: {'line': b'running install_lib\n'}
+[0.669706] (perception_summer) StdoutLine: {'line': b'running install_data\n'}
+[0.669794] (perception_summer) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.670925] (perception_summer) StdoutLine: {'line': b"removing '/home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages/perception_summer-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.671103] (perception_summer) StdoutLine: {'line': b'Copying ../../build/perception_summer/perception_summer.egg-info to /home/purvanya/projects/perception_summer/install/perception_summer/lib/python3.10/site-packages/perception_summer-0.0.0-py3.10.egg-info\n'}
+[0.671502] (perception_summer) StdoutLine: {'line': b'running install_scripts\n'}
+[0.685784] (perception_summer) StdoutLine: {'line': b'Installing main script to /home/purvanya/projects/perception_summer/install/perception_summer/lib/perception_summer\n'}
+[0.686042] (perception_summer) StdoutLine: {'line': b'Installing predict script to /home/purvanya/projects/perception_summer/install/perception_summer/lib/perception_summer\n'}
+[0.686168] (perception_summer) StdoutLine: {'line': b"writing list of installed files to '/home/purvanya/projects/perception_summer/build/perception_summer/install.log'\n"}
+[0.701673] (-) TimerEvent: {}
+[0.704589] (perception_summer) CommandEnded: {'returncode': 0}
+[0.712250] (perception_summer) JobEnded: {'identifier': 'perception_summer', 'rc': 0}
+[0.801844] (-) TimerEvent: {}
+[0.902095] (-) TimerEvent: {}
+[1.002348] (-) TimerEvent: {}
+[1.102687] (-) TimerEvent: {}
+[1.203012] (-) TimerEvent: {}
+[1.303339] (-) TimerEvent: {}
+[1.403678] (-) TimerEvent: {}
+[1.504010] (-) TimerEvent: {}
+[1.604337] (-) TimerEvent: {}
+[1.704601] (-) TimerEvent: {}
+[1.804855] (-) TimerEvent: {}
+[1.905103] (-) TimerEvent: {}
+[2.005373] (-) TimerEvent: {}
+[2.105638] (-) TimerEvent: {}
+[2.205852] (-) TimerEvent: {}
+[2.306105] (-) TimerEvent: {}
+[2.406328] (-) TimerEvent: {}
+[2.506555] (-) TimerEvent: {}
+[2.606876] (-) TimerEvent: {}
+[2.707148] (-) TimerEvent: {}
+[2.713290] (cone_tracker) StdoutLine: {'line': b'-- Autodetected CUDA architecture(s):  8.9\n'}
+[2.713418] (cone_tracker) StdoutLine: {'line': b'-- Added CUDA NVCC flags for: -gencode;arch=compute_89,code=sm_89\n'}
+[2.729906] (cone_tracker) StdoutLine: {'line': b'-- Found CUDA 12.6 at /usr/local/cuda\n'}
+[2.730547] (cone_tracker) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.777247] (cone_tracker) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.777353] (cone_tracker) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.777392] (cone_tracker) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.777554] (cone_tracker) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.778005] (cone_tracker) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.778043] (cone_tracker) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.778141] (cone_tracker) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.778600] (cone_tracker) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.784157] (cone_tracker) StdoutLine: {'line': b'-- Generating done\n'}
+[2.786393] (cone_tracker) StdoutLine: {'line': b'-- Build files have been written to: /home/purvanya/projects/perception_summer/build/cone_tracker\n'}
+[2.807268] (-) TimerEvent: {}
+[2.820890] (cone_tracker) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target main\x1b[0m\n'}
+[2.857109] (cone_tracker) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o\x1b[0m\n'}
+[2.907360] (-) TimerEvent: {}
+[3.007623] (-) TimerEvent: {}
+[3.108002] (-) TimerEvent: {}
+[3.208340] (-) TimerEvent: {}
+[3.308702] (-) TimerEvent: {}
+[3.408924] (-) TimerEvent: {}
+[3.509169] (-) TimerEvent: {}
+[3.609508] (-) TimerEvent: {}
+[3.709837] (-) TimerEvent: {}
+[3.810175] (-) TimerEvent: {}
+[3.910431] (-) TimerEvent: {}
+[4.010761] (-) TimerEvent: {}
+[4.111019] (-) TimerEvent: {}
+[4.211361] (-) TimerEvent: {}
+[4.311720] (-) TimerEvent: {}
+[4.412045] (-) TimerEvent: {}
+[4.512380] (-) TimerEvent: {}
+[4.612707] (-) TimerEvent: {}
+[4.713036] (-) TimerEvent: {}
+[4.813382] (-) TimerEvent: {}
+[4.913713] (-) TimerEvent: {}
+[5.014059] (-) TimerEvent: {}
+[5.114394] (-) TimerEvent: {}
+[5.214748] (-) TimerEvent: {}
+[5.315099] (-) TimerEvent: {}
+[5.415428] (-) TimerEvent: {}
+[5.515772] (-) TimerEvent: {}
+[5.616099] (-) TimerEvent: {}
+[5.716434] (-) TimerEvent: {}
+[5.816769] (-) TimerEvent: {}
+[5.917102] (-) TimerEvent: {}
+[6.017434] (-) TimerEvent: {}
+[6.117776] (-) TimerEvent: {}
+[6.218126] (-) TimerEvent: {}
+[6.318458] (-) TimerEvent: {}
+[6.418804] (-) TimerEvent: {}
+[6.519167] (-) TimerEvent: {}
+[6.619518] (-) TimerEvent: {}
+[6.719870] (-) TimerEvent: {}
+[6.820204] (-) TimerEvent: {}
+[6.920532] (-) TimerEvent: {}
+[7.020889] (-) TimerEvent: {}
+[7.121230] (-) TimerEvent: {}
+[7.221581] (-) TimerEvent: {}
+[7.321950] (-) TimerEvent: {}
+[7.422316] (-) TimerEvent: {}
+[7.522680] (-) TimerEvent: {}
+[7.622915] (-) TimerEvent: {}
+[7.723144] (-) TimerEvent: {}
+[7.823375] (-) TimerEvent: {}
+[7.923602] (-) TimerEvent: {}
+[8.023986] (-) TimerEvent: {}
+[8.115406] (cone_tracker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.115547] (cone_tracker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:11:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_device\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktorch::cuda\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.115586] (cone_tracker) StderrLine: {'line': b'   11 |     torch::Device current_device = torch::cuda::\x1b[01;31m\x1b[Kcurrent_device\x1b[m\x1b[K();\n'}
+[8.115618] (cone_tracker) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.117188] (cone_tracker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:15:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgetDeviceName\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktorch::cuda\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.117282] (cone_tracker) StderrLine: {'line': b'   15 |     std::cout << "Device Name: " << torch::cuda::\x1b[01;31m\x1b[KgetDeviceName\x1b[m\x1b[K(current_device.index()) << std::endl;\n'}
+[8.117319] (cone_tracker) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.124085] (-) TimerEvent: {}
+[8.224388] (-) TimerEvent: {}
+[8.324723] (-) TimerEvent: {}
+[8.425069] (-) TimerEvent: {}
+[8.525405] (-) TimerEvent: {}
+[8.625764] (-) TimerEvent: {}
+[8.726098] (-) TimerEvent: {}
+[8.826438] (-) TimerEvent: {}
+[8.926786] (-) TimerEvent: {}
+[9.027128] (-) TimerEvent: {}
+[9.127473] (-) TimerEvent: {}
+[9.227812] (-) TimerEvent: {}
+[9.328168] (-) TimerEvent: {}
+[9.428502] (-) TimerEvent: {}
+[9.528833] (-) TimerEvent: {}
+[9.629091] (-) TimerEvent: {}
+[9.729403] (-) TimerEvent: {}
+[9.829705] (-) TimerEvent: {}
+[9.930021] (-) TimerEvent: {}
+[10.030285] (-) TimerEvent: {}
+[10.130567] (-) TimerEvent: {}
+[10.230959] (-) TimerEvent: {}
+[10.331294] (-) TimerEvent: {}
+[10.431627] (-) TimerEvent: {}
+[10.445550] (cone_tracker) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1\n'}
+[10.445828] (cone_tracker) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/main.dir/all] Error 2\n'}
+[10.446027] (cone_tracker) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.447801] (cone_tracker) CommandEnded: {'returncode': 2}
+[10.452495] (cone_tracker) JobEnded: {'identifier': 'cone_tracker', 'rc': 2}
+[10.463144] (-) EventReactorShutdown: {}

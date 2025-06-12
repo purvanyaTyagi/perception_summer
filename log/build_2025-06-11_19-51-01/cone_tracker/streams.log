@@ -1,0 +1,75 @@
+[0.011s] Invoking command in '/home/purvanya/projects/perception_summer/build/cone_tracker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --build /home/purvanya/projects/perception_summer/build/cone_tracker -- -j12 -l12
+[0.032s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.130s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.149s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.151s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.155s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.161s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.169s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.190s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.191s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.268s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.323s] -- PyTorch: CUDA detected: 12.6
+[0.323s] -- PyTorch: CUDA nvcc is: /usr/local/cuda/bin/nvcc
+[0.323s] -- PyTorch: CUDA toolkit directory: /usr/local/cuda
+[0.412s] -- PyTorch: Header version is: 12.6
+[0.491s] [33mCMake Warning at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:140 (message):
+[0.491s]   Failed to compute shorthash for libnvrtc.so
+[0.491s] Call Stack (most recent call first):
+[0.491s]   /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+[0.491s]   /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+[0.491s]   CMakeLists.txt:17 (find_package)
+[0.491s] 
+[0.491s] [0m
+[0.491s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.491s]   The package name passed to `find_package_handle_standard_args` (nvtx3) does
+[0.492s]   not match the name of the calling package (Caffe2).  This can lead to
+[0.492s]   problems in calling code that expects `find_package` result variables
+[0.492s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.492s] Call Stack (most recent call first):
+[0.492s]   /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:178 (find_package_handle_standard_args)
+[0.492s]   /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+[0.492s]   /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+[0.492s]   CMakeLists.txt:17 (find_package)
+[0.492s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.492s] [0m
+[0.492s] -- Could NOT find nvtx3 (missing: nvtx3_dir) 
+[0.493s] [33mCMake Warning at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:184 (message):
+[0.493s]   Cannot find NVTX3, find old NVTX instead
+[0.493s] Call Stack (most recent call first):
+[0.493s]   /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+[0.493s]   /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+[0.493s]   CMakeLists.txt:17 (find_package)
+[0.494s] 
+[0.494s] [0m
+[0.494s] -- USE_CUDNN is set to 0. Compiling without cuDNN support
+[0.494s] -- USE_CUSPARSELT is set to 0. Compiling without cuSPARSELt support
+[0.494s] -- USE_CUDSS is set to 0. Compiling without cuDSS support
+[0.495s] -- USE_CUFILE is set to 0. Compiling without cuFile support
+[2.712s] -- Autodetected CUDA architecture(s):  8.9
+[2.713s] -- Added CUDA NVCC flags for: -gencode;arch=compute_89,code=sm_89
+[2.729s] -- Found CUDA 12.6 at /usr/local/cuda
+[2.730s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.776s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.776s] -- Configured cppcheck include dirs: 
+[2.776s] -- Configured cppcheck exclude dirs and/or files: 
+[2.777s] -- Added test 'lint_cmake' to check CMake code style
+[2.777s] -- Added test 'uncrustify' to check C / C++ code style
+[2.777s] -- Configured uncrustify additional arguments: 
+[2.777s] -- Added test 'xmllint' to check XML markup files
+[2.778s] -- Configuring done
+[2.783s] -- Generating done
+[2.785s] -- Build files have been written to: /home/purvanya/projects/perception_summer/build/cone_tracker
+[2.820s] [35m[1mConsolidate compiler generated dependencies of target main[0m
+[2.856s] [ 50%] [32mBuilding CXX object CMakeFiles/main.dir/src/main.cpp.o[0m
+[8.115s] [01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[8.115s] [01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:11:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_device[m[K’ is not a member of ‘[01m[Ktorch::cuda[m[K’
+[8.115s]    11 |     torch::Device current_device = torch::cuda::[01;31m[Kcurrent_device[m[K();
+[8.115s]       |                                                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[8.116s] [01m[K/home/purvanya/projects/perception_summer/src/cone_tracker/src/main.cpp:15:50:[m[K [01;31m[Kerror: [m[K‘[01m[KgetDeviceName[m[K’ is not a member of ‘[01m[Ktorch::cuda[m[K’
+[8.116s]    15 |     std::cout << "Device Name: " << torch::cuda::[01;31m[KgetDeviceName[m[K(current_device.index()) << std::endl;
+[8.116s]       |                                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[10.445s] gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/src/main.cpp.o] Error 1
+[10.445s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/main.dir/all] Error 2
+[10.445s] gmake: *** [Makefile:146: all] Error 2
+[10.447s] Invoked command in '/home/purvanya/projects/perception_summer/build/cone_tracker' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/purvanya/projects/perception_summer/install/perception_summer:/home/purvanya/projects/EUFS/install/eufs_launcher:/home/purvanya/projects/EUFS/install/eufs_tracks:/home/purvanya/projects/EUFS/install/eufs_rqt:/home/purvanya/projects/EUFS/install/eufs_racecar:/opt/ros/humble /usr/bin/cmake --build /home/purvanya/projects/perception_summer/build/cone_tracker -- -j12 -l12

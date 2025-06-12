@@ -1,0 +1,34 @@
+[33mCMake Warning at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:140 (message):
+  Failed to compute shorthash for libnvrtc.so
+Call Stack (most recent call first):
+  /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+  /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  CMakeLists.txt:17 (find_package)
+
+[0m
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (nvtx3) does
+  not match the name of the calling package (Caffe2).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:178 (find_package_handle_standard_args)
+  /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+  /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  CMakeLists.txt:17 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning at /opt/libtorch/share/cmake/Caffe2/public/cuda.cmake:184 (message):
+  Cannot find NVTX3, find old NVTX instead
+Call Stack (most recent call first):
+  /opt/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+  /opt/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+  CMakeLists.txt:17 (find_package)
+
+[0m
+/usr/bin/ld: /opt/libtorch/lib/libtorch_cuda.so: undefined reference to `cudaGraphAddDependencies_v2@libcudart.so.12'
+/usr/bin/ld: /opt/libtorch/lib/libtorch_cuda.so: undefined reference to `cudaStreamGetCaptureInfo_v3@libcudart.so.12'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/main.dir/build.make:160: main] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
